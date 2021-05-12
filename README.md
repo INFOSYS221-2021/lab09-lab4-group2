@@ -65,19 +65,19 @@ let cardSuit = cardInfo.cards[0].suit;
 
 
 TODO 5: update the cardValue appropriately
-if card is Jack, then set the cardValue to 11, etc
 
   if (cardValue == 'JACK') {
     cardValue = 11;
-  } 
-  
-  if (cardValue == 'QUEEN') {
+  }
+  else if (cardValue == 'QUEEN') {
     cardValue = 12;
   } 
-  
-   if (cardValue == 'KING') {
+  else if (cardValue == 'KING') {
     cardValue = 13;
-  } 
+  }
+  else if (cardValue == 'ACE') {
+    cardValue = 1;
+  }
   
 
 TODO 6: find the image of the card
