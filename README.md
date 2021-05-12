@@ -23,4 +23,38 @@ Two, KH, 8C
 
 How do you retrieve deck_id from the response? Write your code using JavaScript.
 
+fetch("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1")
+      .then(response => response.json())
+      .then(data => {
+          // handle the response
+          deckID = data.deck_id;
+          console.log(deckID);
+      })
+      .catch(error => {
+          // handle the error
+          console.log('There has been an error');
+      });
+
+	return
+
+How do you print information about each card? Write your code using JavaScript
+
+Exercise Two: Complete Hit Me! Game with Deck of Cards API: 
+
+ TODO 1: use the appropriate API to shuff
+
+fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1');
+
+ TODO 2: get the id of the deck from
+ 
+    deckID = data.deck_id;
+    return deckID;
+    
+TODO 3: use the appropriate API to draw one card 
+from the deck created at the start of the game
+Hint: use the variable thisDec
+
+
+TODO 4: find the value and suit of the
+
 
