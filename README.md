@@ -60,6 +60,7 @@ let response = await fetch('https://deckofcardsapi.com/api/deck/thisDeck/draw/?c
 TODO 4: find the value and suit of the card 
 
 let cardValue =cardInfo.cards[0].value;
+
 let cardSuit = cardInfo.cards[0].suit;
 console.log(cardSuit, cardValue)
 
