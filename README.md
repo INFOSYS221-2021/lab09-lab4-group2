@@ -53,19 +53,36 @@ fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1');
     
 TODO 3: use the appropriate API to draw one card 
 from the deck created at the start of the game
-Hint: use the variable thisDec
+Hint: use the variable thisDeck
 
+let response = await fetch('https://deckofcardsapi.com/api/deck/thisDeck/draw/?count=1');
 
 TODO 4: find the value and suit of the card 
+
+let cardValue =cardInfo.cards[0].value;
+let cardSuit = cardInfo.cards[0].suit;
+console.log(cardSuit, cardValue)
 
 
 TODO 5: update the cardValue appropriately
 if card is Jack, then set the cardValue to 11, etc
 
+  if (cardValue == 'JACK') {
+    cardValue = 11;
+  } 
+  
+  if (cardValue == 'QUEEN') {
+    cardValue = 12;
+  } 
+  
+   if (cardValue == 'KING') {
+    cardValue = 13;
+  } 
+  
+
 TODO 6: find the image of the card
 
-
-
+let imgUrl = cardInfo.cards[0].image
 
 
 
