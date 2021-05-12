@@ -55,6 +55,16 @@ from the deck created at the start of the game
 Hint: use the variable thisDec
 
 
-TODO 4: find the value and suit of the
+TODO 4: find the value and suit of the card 
+
+
+TODO 5: update the cardValue appropriately
+if card is Jack, then set the cardValue to 11, etc
+
+TODO 6: find the image of the card
+
+
+
+
 
 
