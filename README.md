@@ -38,6 +38,7 @@ fetch("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1")
 	return
 
 How do you print information about each card? Write your code using JavaScript
+_.values(cards)
 
 Exercise Two: Complete Hit Me! Game with Deck of Cards API: 
 
