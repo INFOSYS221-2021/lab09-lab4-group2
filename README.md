@@ -55,7 +55,7 @@ TODO 3: use the appropriate API to draw one card
 from the deck created at the start of the game
 Hint: use the variable thisDeck
 
-let response = await fetch('https://deckofcardsapi.com/api/deck/thisDeck/draw/?count=1');
+let response = await fetch('https://deckofcardsapi.com/api/deck/' + thisDeck + '/draw/?count=1');
 
 TODO 4: find the value and suit of the card 
 
